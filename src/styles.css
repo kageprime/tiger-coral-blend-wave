@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ivory: #f3efe4;
+  --color-ink: #2c2824;
+  --color-muted: #6f675c;
+  --color-teal: #1f8a78;
+  --color-line: #e0d8c8;
+  --color-card: #f7f4ec;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "Outfit", system-ui, sans-serif;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html,
+  body {
+    background: var(--color-ivory);
+    color: var(--color-ink);
+  }
+
+  button:focus-visible {
+    outline: 2px solid var(--color-teal);
+    outline-offset: 3px;
+  }
+}
+
+.pixel {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  background: var(--color-ivory);
+  display: block;
+}
+
+.dock {
+  padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+}
+
+kbd {
+  font-family: var(--font-sans);
+  border: 1px solid var(--color-line);
+  border-bottom-width: 2px;
+  border-radius: 0.35rem;
+  padding: 0.05rem 0.4rem;
+  background: var(--color-ivory);
+  font-size: 0.75rem;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.banner-rise {
+  animation: rise 180ms ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .banner-rise {
+    animation: none;
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Small Pitch",
+      "hasCanvas": true,
+      "bodyTextLen": 176,
+      "bodyTextHash": "963f72ac567207cffce2f78d6529426fb36b37a65ec55bea02b8da022a664863",
+      "bodyTextPrefix": "Small Pitch TEAL 0 1:10 ASH 0 FIVE-A-SIDE Small Pitch A miniatur",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Small Pitch",
+      "hasCanvas": true,
+      "bodyTextLen": 176,
+      "bodyTextHash": "963f72ac567207cffce2f78d6529426fb36b37a65ec55bea02b8da022a664863",
+      "bodyTextPrefix": "Small Pitch TEAL 0 1:10 ASH 0 FIVE-A-SIDE Small Pitch A miniatur",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
